@@ -1,0 +1,74 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.~*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.env
+.venv/v/
+pip-log.txtg.txt
+.tox/
+.coverage
+htmlcov/
+.mypy_cache/_cache/
+.pytest_cache/ache/
+.pyre/
+.pytype/
+
+# C++
+*.o
+*.obj*.obj
+*.so
+*.a
+*.out
+*.exee
+*.dllll
+*.dSYM/M/
+*.d/
+*.gcdaa
+*.gcno
+*.gcovov
+*.gch
+*.pch
+*.ipch
+*.classss
+*.dylibib
+*.lib
+
+# Fortranan
+*.mod
+
+# Rust
+/target/et/
+**/*.rs.bk*.rs.bk
+Cargo.lock.lock
+*.rlibb
+
+# IDEs and EditorsEs and Editors
+.vscode/de/
+.idea/.idea/
+*.iml
+*.sublime-workspacee-workspace
+*.sublime-projectproject
+
+# MacOSS
+.DS_Store.DS_Store
+.AppleDouble
+.LSOverrideide
+
+# Backup fileskup files
+*.old
+*.orig
