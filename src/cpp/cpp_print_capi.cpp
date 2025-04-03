@@ -77,10 +77,10 @@ static PyMethodDef CppPrintMethods[] = {
 // Define the module that Python will use to access the C++ function
 static struct PyModuleDef cppprintmodule = {
     PyModuleDef_HEAD_INIT,
-    "cpp_print_lib",  // Name of module
-    NULL,             // Module docstring
-    -1,               // Size of per-interpreter state of the module
+    "cpp_print_capi",  // Name of module
+    NULL,              // Module docstring
+    -1,                // Size of per-interpreter state of the module
     CppPrintMethods};
 
 // Module initialization function
-PyMODINIT_FUNC PyInit_cpp_print_lib(void) { return PyModule_Create(&cppprintmodule); }
+PyMODINIT_FUNC PyInit_cpp_print_capi(void) { return PyModule_Create(&cppprintmodule); }

@@ -1,4 +1,4 @@
-# Makefile for building cpp_print_lib with the Python C API
+# Makefile for building cpp_print_capi with the Python C API
 
 
 PYTHON_CMD ?= $(shell readlink -f $(shell which python))
@@ -9,7 +9,7 @@ PYTHON_SUFFIX := $(shell $(PYTHON_CMD)-config --extension-suffix)
 PYTHON_LD := $(shell $(PYTHON_CMD)-config --ldflags)
 LD_FLAGS := $(PYTHON_LD) -Wl,-undefined,dynamic_lookup
 OBJ := obj
-TARGET := $(OBJ)/cpp_print_lib$(PYTHON_SUFFIX)
+TARGET := $(OBJ)/cpp_print_capi$(PYTHON_SUFFIX)
 SRC := cpp_print_capi.cpp
 INSTALL := ../../buil/obj
 
@@ -31,7 +31,7 @@ clean:
 test: $(TARGET)
 	@echo "Running tests..."
 	@echo "Test 1: Basic print"
-	cd $(OBJ) && $(PYTHON_CMD) -c "import cpp_print_lib; cpp_print_lib.cpp_print('Hello World! (Python => C++)')"
+	cd $(OBJ) && $(PYTHON_CMD) -c "import cpp_print_capi; cpp_print_capi.cpp_print('Hello World! (Python => C++)')"
 
 install: test
 	cp $(OBJ)/*$(PYTHON_SUFFIX) $(INSTALL)
