@@ -43,7 +43,7 @@ static PyObject* cpp_print(PyObject* self, PyObject* args) {
   // Declare a char* variable to hold the raw string
   const char* raw_message;
 
-  std::cout << "    cpp_print called" << std::endl;
+  std::cout << "    cpp_print called (C API)" << std::endl;
 
   // Parse the input tuple to extract the string argument
   // The "s" format character indicates that we expect a string argument
@@ -63,7 +63,7 @@ static PyObject* cpp_print(PyObject* self, PyObject* args) {
   // Print the message to the console
   std::cout << message << std::endl;
   // Print a message indicating that the function was called
-  std::cout << "    cpp_print: Message printed successfully." << std::endl;
+  std::cout << "    cpp_print: Message printed successfully (C API)." << std::endl;
 
   // Return None to indicate successful completion
   Py_RETURN_NONE;

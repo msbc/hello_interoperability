@@ -12,7 +12,9 @@
 namespace py = pybind11;
 
 void cpp_print(const std::string& message) {
-  std::cout << "C++ received: " << message << std::endl;
+  std::cout << "    cpp_print called (pybind)" << std::endl;
+  std::cout << message << std::endl;
+  std::cout << "    cpp_print: Message printed successfully (pybind)." << std::endl;
 }
 
 // PYBIND11_MODULE(<module_name>, <module>) is a macro that defines a Python module.

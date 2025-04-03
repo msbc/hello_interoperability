@@ -45,8 +45,10 @@ clean:
 
 test: $(OBJ_FILES)
 	@echo "Running tests..."
-	@echo "Test 1: Basic print"
+	@echo "Test 1: Basic print CAPI"
 	cd $(OBJ_DIR) && $(PYTHON_CMD) -c "import cpp_print_capi; cpp_print_capi.cpp_print('Hello World! (Python => C++)')"
+	@echo "Test 2: Basic print pybind11"
+	cd $(OBJ_DIR) && $(PYTHON_CMD) -c "import cpp_print_pybind; cpp_print_pybind.cpp_print('Hello World! (Python => C++)')"
 
 install: test
 	cp $(OBJ_DIR)/*$(PYTHON_SUFFIX) $(INSTALL)
