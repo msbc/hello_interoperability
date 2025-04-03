@@ -14,6 +14,11 @@ Interoperability is a key aspect of modern software development, enabling develo
 - ~~Fortran~~
 - ~~Rust~~
 
+## Useful Links
+- https://docs.python.org/3/extending/extending.html
+- https://www.mit.edu/people/amliu/vrut/python/ext/parseTuple.html
+- https://pybind11.readthedocs.io/en/stable/
+
 ## Features
 
 - Examples of calling print statements in different languages.
@@ -40,6 +45,11 @@ Interoperability is a key aspect of modern software development, enabling develo
 - **C++**: Using `pybind11` to call C++ functions from Python.
 - ~~**Fortran**: Using `f2py` to integrate Fortran code with Python.~~
 - ~~**Rust**: Leveraging `pyo3` to call Rust functions from Python.~~
+
+## Todo
+- Fix Makefile so that `cpp_print_pybind.cpp` doesn't recompile every time.
+- Make example of C++ code that calls Python code.
+- Implement ~~strikethrough~~ features.
 
 ## Contributing
 
